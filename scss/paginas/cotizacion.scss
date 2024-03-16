@@ -1,0 +1,32 @@
+
+.sec-1{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    padding: 5% 10%;
+}
+
+#destino{
+    background-color: gray;
+    border-radius: 20px;
+    padding: 20px;
+    width: 280px;
+}
+
+#destino textarea{
+border-radius: 0%;
+}
+
+#destino input{
+    border-radius: 0%;
+}
+
+@mixin media-query-mobile{
+    @media (max-width: 576px){
+        @content;
+    }
+
+    @media (max-width: 576px){
+    }   
+
+}

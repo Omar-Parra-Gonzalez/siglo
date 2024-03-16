@@ -1,0 +1,120 @@
+main{
+
+    @mixin media-query-mobile{
+        @media (max-width: 576px){
+            @content;
+        }
+    }
+
+    background-color: $color-secundario;
+
+    .img-principal{
+        padding-top: 30px;
+        img{
+            margin-top: 110px;
+            width: 99%; /* ancho */
+            height: 85%; /* alto */
+            padding: 30px;
+            @include media-query-mobile(){
+                margin-top: 3%;
+                height: 200px;
+                padding: 1px;
+            }
+        }
+
+        @include media-query-mobile(){
+            padding-top: 0px;
+        }
+    }
+    
+    .contenido{
+        border-bottom-style: solid;
+        h2{
+            text-align: center;
+            margin: 5%;
+            font-size: 50px;
+            @include media-query-mobile(){
+                text-align: center;
+                margin: 5%;
+                font-size: 30px;
+            }
+        }
+    }
+
+    .sec-1{
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        padding: 5% 10%;
+            img{
+                margin-right: 5%;
+                @include media-query-mobile(){
+                    margin-right: 0%;
+                    width: 350px;
+                }
+            }
+        @include media-query-mobile(){
+            margin-top: 0px;
+            display: flex;
+            align-items:center;
+            flex-direction: column;
+        }
+    }
+
+    .text-sec-1{
+        margin-left: 40px;
+        @include media-query-mobile(){
+            margin-left: 10px;
+        }
+    }
+    
+    #vid{
+        width: 70%; /* ancho */
+        height: 220px; /* alto */
+        @include media-query-mobile(){
+            width: 350px;
+            height: 200px;
+        }
+    }
+
+    .sec-nosotros{
+        padding: 5% 10%;
+        border-bottom-style: solid;
+    }
+    
+    .patrocinadores{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 5%;
+        img{
+            width: 20%;
+            @include media-query-mobile(){
+                width: 20%;
+            }
+        }
+        @include media-query-mobile(){
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+            margin-top: 5%;
+        }
+    }
+
+    .cotizacion{
+        padding: 5%;
+        border-bottom-style: solid;
+    }
+
+    .img-cotizacion{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url(../imagenes/img\ 4.jpeg);
+        padding: 30px;
+        background-repeat: no-repeat;
+        color: black;
+        padding-left: 30PX;
+    }
+}
