@@ -1,8 +1,9 @@
 .texto-empresa{
-    display: flex;
+    padding-left: 30px;
+    p{
+        font-size: 19px;
+    }
+    @include media-query-mobile(){
+        padding-left: 15px;
+    }
 }
-
-.img-zona-verde{
-    padding: 10px;
-}
-

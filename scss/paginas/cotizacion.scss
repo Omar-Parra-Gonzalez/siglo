@@ -1,3 +1,8 @@
+@mixin media-query-mobile{
+    @media (max-width: 576px){
+        @content;
+    }
+}
 
 .sec-1{
     display: flex;
@@ -11,22 +16,10 @@
     border-radius: 20px;
     padding: 20px;
     width: 280px;
-}
-
-#destino textarea{
-border-radius: 0%;
-}
-
-#destino input{
-    border-radius: 0%;
-}
-
-@mixin media-query-mobile{
-    @media (max-width: 576px){
-        @content;
+    textarea{
+        border-radius: 0%;
+    } 
+    input{
+        border-radius: 0%;
     }
-
-    @media (max-width: 576px){
-    }   
-
 }

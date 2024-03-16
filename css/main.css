@@ -186,16 +186,16 @@ main .cotizacion {
 }
 main .img-cotizacion {
   height: 450px;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(../imagenes/img\ 4.jpeg);
+  background-image: url(../imagenes/img4.jpg);
   padding: 30px;
   background-repeat: no-repeat;
   color: black;
-  padding-left: 30PX;
+  padding-bottom: 70px;
 }
-
 footer {
   background-color: #D5D8DC;
 }
@@ -270,6 +270,15 @@ footer .mapa iframe {
   height: auto;
 }
 
+.text-veh {
+  padding-left: 20px;
+}
+@media (max-width: 576px) {
+  .text-veh {
+    padding-top: 10px;
+  }
+}
+
 .galeria:hover {
   border: 1px solid lightcoral;
   transform: rotate(-4deg);
@@ -291,11 +300,15 @@ footer .mapa iframe {
 }
 
 .texto-empresa {
-  display: flex;
+  padding-left: 30px;
 }
-
-.img-zona-verde {
-  padding: 10px;
+.texto-empresa p {
+  font-size: 19px;
+}
+@media (max-width: 576px) {
+  .texto-empresa {
+    padding-left: 15px;
+  }
 }
 
 #contacto {
@@ -337,11 +350,9 @@ footer .mapa iframe {
   padding: 20px;
   width: 280px;
 }
-
 #destino textarea {
   border-radius: 0%;
 }
-
 #destino input {
   border-radius: 0%;
 }

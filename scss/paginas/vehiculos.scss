@@ -17,6 +17,13 @@
     }
 }
 
+.text-veh{
+    padding-left: 20px;
+    @include media-query-mobile(){
+        padding-top: 10px;
+    }
+}
+
 .galeria:hover{
     border: 1px solid lightcoral;
     transform: rotate(-4deg);
