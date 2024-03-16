@@ -87,12 +87,12 @@ main{
         flex-direction: row;
         justify-content: space-between;
         margin-top: 5%;
-        img{
-            width: 20%;
-            @include media-query-mobile(){
+            img{
                 width: 20%;
+                @include media-query-mobile(){
+                    width: 20%;
+                }
             }
-        }
         @include media-query-mobile(){
             display: flex;
             flex-direction: row;
