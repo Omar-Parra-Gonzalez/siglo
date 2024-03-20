@@ -35,8 +35,8 @@
 }
 
 .carousel-item img{
-    width: 100%;
     height: 500px;
+    width: 100%;
     @include media-query-mobile(){
         height: 200px;
     }
