@@ -1,6 +1,9 @@
+@import "./general/variables.scss";
+
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 @import "./general/reset.scss";
-@import "./general/variables.scss";
+
 
 @import "./body/header.scss";
 @import "./body/main.scss";
